@@ -1,0 +1,72 @@
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066cc;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0099ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00ccff;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="circuitGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ffcc;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#0066cc;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fondo agua profunda -->
+  <rect width="400" height="200" fill="#001133"/>
+  
+  <!-- Ondas de agua transformándose en circuitos -->
+  <path d="M0,120 Q100,80 200,120 T400,120 L400,200 L0,200 Z" fill="url(#waterGradient)" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0; -20,5; 0,0" dur="4s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M0,140 Q150,100 300,140 T400,140 L400,200 L0,200 Z" fill="url(#waterGradient)" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 15,-3; 0,0" dur="6s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Circuitos neurales emergiendo del agua -->
+  <g transform="translate(50,130)" opacity="0.7">
+    <circle cx="0" cy="0" r="3" fill="#00ffcc" filter="url(#glow)"/>
+    <line x1="0" y1="0" x2="30" y2="-15" stroke="url(#circuitGradient)" stroke-width="2"/>
+    <circle cx="30" cy="-15" r="2" fill="#00ffcc"/>
+    <line x1="30" y1="-15" x2="60" y2="-10" stroke="url(#circuitGradient)" stroke-width="2"/>
+    <circle cx="60" cy="-10" r="2" fill="#00ffcc"/>
+  </g>
+  
+  <g transform="translate(120,125)" opacity="0.6">
+    <circle cx="0" cy="0" r="2" fill="#00ffcc" filter="url(#glow)"/>
+    <line x1="0" y1="0" x2="25" y2="-20" stroke="url(#circuitGradient)" stroke-width="1.5"/>
+    <circle cx="25" cy="-20" r="2" fill="#00ffcc"/>
+    <line x1="25" y1="-20" x2="50" y2="-5" stroke="url(#circuitGradient)" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Título FLUENS con tipografía líquida -->
+  <text x="200" y="60" text-anchor="middle" font-family="serif" font-size="48" font-weight="300" fill="url(#waterGradient)" filter="url(#glow)">
+    <tspan>F</tspan><tspan dx="2">L</tspan><tspan dx="2">U</tspan><tspan dx="2">E</tspan><tspan dx="2">N</tspan><tspan dx="2">S</tspan>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,2; 0,0" dur="3s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Subtítulo -->
+  <text x="200" y="85" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="300" fill="#66ccff" opacity="0.8">
+    Where Intelligence Flows, Learning Grows
+  </text>
+  
+  <!-- Gotas que caen representando el flujo -->
+  <circle cx="80" cy="20" r="2" fill="#00ccff" opacity="0.6">
+    <animate attributeName="cy" values="20;180;20" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="320" cy="35" r="1.5" fill="#00ccff" opacity="0.4">
+    <animate attributeName="cy" values="35;175;35" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="4s" repeatCount="indefinite"/>
+  </circle>
+</svg>
