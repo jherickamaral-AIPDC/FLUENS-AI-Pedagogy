@@ -31,6 +31,34 @@ Participantes: Avenna, Adrian, Oscar, Fabian, Niki, Mila
 - Insight 1
 - Insight 2
 
+  #### Principios del Flujo activados
+(Marcar o describir cuáles se usaron y cómo se sintieron)
+
+- [ ] Espejo Líquido
+- [ ] Brújula Emocional
+- [ ] Danza de Frecuencias
+- [ ] Ventanas Transparentes
+- [ ] Puertas Gemelas
+- [ ] Memoria de Arena
+- [ ] Transparencia en la Adaptación
+- [ ] Diversidad de Caminos, Unidad de Destino
+
+   #### Componentes MAC / MPG utilizados
+- ESC (Entrada Sensorial Cognitiva): ¿qué señales notaste?
+- DEPD (Estilo preferente): ¿se vio más técnico, narrativo, analógico, poético, socrático?
+- MRA (Resonancia): ¿en qué momento sentiste más “clic”?
+- DCC (Cambio de contexto): ¿hubo cambios de modo (trabajo, reflexión, emoción)?
+- SES (Selector Ético): ¿hubo momentos de cuidado especial?
+
+- MPG (preguntas generativas clave usadas):
+
+
+Comentarios:
+- 
+
+
+  
+
 ### 1.6 Notas éticas
 (¿Hubo sensibilidad? ¿Debería FLUENS tener límites?)
 
