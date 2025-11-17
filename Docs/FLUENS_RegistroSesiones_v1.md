@@ -83,3 +83,6 @@ Comentarios:
 
 ## 2.6 Mila
 (Usar la plantilla)
+
+## 2.7 Miguel
+(Usar plantilla)
